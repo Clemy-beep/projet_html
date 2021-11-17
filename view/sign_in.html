@@ -18,12 +18,12 @@
     <header>
         <div id="header-message"> <a href="../index.html">HTML is cool</a></div>
         <nav>
-            <a href="articles.html">Articles</a>
-            <a href="categories.html">Categories</a>
-            <a href="add_article.html">Add article</a>
-            <a href="log_in.html">Log in</a>
-            <a href="sign_in.html">Sign in</a>
-            <a href="log_out.html">Log out</a>
+            <a href="log_in.html"><span class="material-icons">
+                login
+                </span>Log in</a>
+            <a href="sign_in.html"><span class="material-icons">
+                create
+                </span>Sign in</a>
 
         </nav>
     </header>
@@ -43,6 +43,12 @@
                 </span>  Password</label>
             <br>
             <input type="password" name="password" id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <br>
+            <label id="password-label" for="password"><span class="material-icons-outlined">
+                password
+                </span>  Confirm</label>
+            <br>
+            <input type="password" name="confirmpassword" id="confirmpassword" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
             <br>
             <label for="email"><span class="material-icons-outlined" >
                 email
@@ -67,7 +73,7 @@
                
             </select>
             <br>
-            <input type="submit" value="Sign in !">
+            <input type="submit" value="Sign in !" onclick="window.location.href='log_in.html'">
         </form>
     </section>
 

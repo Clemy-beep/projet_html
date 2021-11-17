@@ -19,12 +19,12 @@
     <header>
         <div id="header-message"> <a href="../index.html">HTML is cool</a></div>
         <nav>
-            <a href="articles.html">Articles</a>
-            <a href="categories.html">Categories</a>
-            <a href="add_article.html">Add article</a>
-            <a href="log_in.html">Log in</a>
-            <a href="sign_in.html">Sign in</a>
-            <a href="log_out.html">Log out</a>
+            <a href="log_in.html"><span class="material-icons">
+                login
+                </span>Log in</a>
+            <a href="sign_in.html"><span class="material-icons">
+                create
+                </span>Sign in</a>
         </nav>
     </header>
     <h1>Log in, dear user !</h1>
@@ -45,7 +45,7 @@
             <input type="password" name="password" id="password" required>
             <br>
 
-            <input type="submit" value="Log in !">
+            <input type="submit" value="Log in !" onclick="window.location.href='articles.html'">
         </form>
     </section>
 
